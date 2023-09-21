@@ -4,13 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Novia's World Clock 🕒</title>
+    <title>Novia's World Clock</title>
   </head>
   <body>
-    <h1>World Clock</h1>
+    <div class="container">
+      <h1>World Clock 🌎🕒</h1>
+      <select name="choose-city" id="choose-city">
+        <option value="">Select a city...</option>
+        <option value="">London</option>
+        <option value="">Santorini</option>
+        <option value="">Lagos</option>
+      </select>
+
+      <div class="city">
+        <h2>Tokyo</h2>
+        <div class="date">September 21st, 2023</div>
+        <div class="time">10:34 AM</div>
+      </div>
+      <div class="city">
+        <h2>New York</h2>
+        <div class="date">September 20th, 2023</div>
+        <div class="time">9:36 PM</div>
+      </div>
+    </div>
     <footer>
       Coded by Novia Hoyte and is open-sourced on
-      <a href="" target="_blank">Github</a>
+      <a href="https://github.com/nhoyte/WorldClock" target="_blank">Github</a>
     </footer>
   </body>
   <script src="source/index.js"></script>

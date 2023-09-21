@@ -1,7 +1,10 @@
-h1 {
-  color: magenta;
-}
 body {
-  background-color: bisque;
+  background-color: rgb(239, 232, 225);
+}
+footer {
   text-align: center;
+}
+div.container {
+  border: 1px solid magenta;
+  border-radius: 5px;
 }
