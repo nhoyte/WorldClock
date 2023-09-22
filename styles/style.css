@@ -1,10 +1,51 @@
 body {
-  background-color: rgb(239, 232, 225);
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/885/original/clock.png?1695355146");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  margin: 0;
+  font-weight: 500px;
+}
+select {
+  display: block;
+  margin: 15px auto;
+  width: 80%;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 footer {
   text-align: center;
 }
 div.container {
-  border: 1px solid magenta;
-  border-radius: 5px;
+  padding: 10px;
+  max-width: 500px;
+  margin: 40px auto;
+  border: 1px solid rgb(58, 0, 58);
+  border-radius: 7px;
+  box-shadow: rgb(137 3 137 / 76%) 0px 3px 8px;
+  background-color: #fdfaff;
+}
+.city {
+  padding: 30px 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.432);
+}
+.city:last-child {
+  border-bottom: none;
+}
+.time {
+  font-size: 36px;
+  font-weight: 600;
+}
+.time small {
+  font-size: 15px;
+  line-height: 36px;
+  vertical-align: middle;
 }
