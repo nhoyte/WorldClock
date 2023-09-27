@@ -13,41 +13,42 @@
     <div class="container">
       <h1>World Clock 🌎🕒</h1>
 
-      <select name="choose-city" id="choose-city">
+      <select id="choose-city">
         <option value="">Select a city...</option>
-        <option value="">London</option>
-        <option value="">Santorini</option>
-        <option value="">Lagos</option>
+        <option value="Europe/London" id="london">London</option>
+        <option value="Europe/Athens">Athens</option>
+        <option value="Africa/Lagos">Lagos</option>
       </select>
+      <div id="display-city">
+        <div class="city">
+          <div>
+            <h2>Tokyo</h2>
+            <div class="date" id="date-tokyo"></div>
+          </div>
+          <div class="time" id="time-tokyo"></div>
+        </div>
+        <div class="city">
+          <div>
+            <h2>New York</h2>
+            <div class="date" id="date-newyork"></div>
+          </div>
+          <div class="time" id="time-newyork"></div>
+        </div>
 
-      <div class="city">
-        <div>
-          <h2>Tokyo, Japan</h2>
-          <div class="date" id="date-tokyo"></div>
+        <div class="city">
+          <div>
+            <h2>Delhi</h2>
+            <div class="date" id="date-delhi"></div>
+          </div>
+          <div class="time" id="time-delhi"></div>
         </div>
-        <div class="time" id="time-tokyo"></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>New York, USA</h2>
-          <div class="date" id="date-newyork"></div>
+        <div class="city">
+          <div>
+            <h2>Shanghai</h2>
+            <div class="date" id="date-shanghai"></div>
+          </div>
+          <div class="time" id="time-shanghai"></div>
         </div>
-        <div class="time" id="time-newyork"></div>
-      </div>
-
-      <div class="city">
-        <div>
-          <h2>Delhi, India</h2>
-          <div class="date" id="date-delhi"></div>
-        </div>
-        <div class="time" id="time-delhi"></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Shanghai, China</h2>
-          <div class="date" id="date-shanghai"></div>
-        </div>
-        <div class="time" id="time-shanghai"></div>
       </div>
     </div>
     <footer>

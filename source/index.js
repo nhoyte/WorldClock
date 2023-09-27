@@ -5,7 +5,7 @@ function updateDateTime() {
   tokyoDateElement.innerHTML = moment().tz("Japan").format("dddd, MMMM Do");
   tokyoTimeElement.innerHTML = moment()
     .tz("Japan")
-    .format("h:m:s:SS [<small>]A[</small>]");
+    .format("h:mm:ss:SS [<small>]A[</small>]");
 
   //New York, USA
   let newyorkDateElement = document.querySelector("#date-newyork");
@@ -15,7 +15,7 @@ function updateDateTime() {
     .format("dddd, MMMM Do");
   newyorkTimeElement.innerHTML = moment()
     .tz("America/New_York")
-    .format("h:m:s:SS [<small>]A[</small>]");
+    .format("h:mm:ss:SS [<small>]A[</small>]");
 
   //Delhi, India
   let delhiDateElement = document.querySelector("#date-delhi");
@@ -25,7 +25,7 @@ function updateDateTime() {
     .format("dddd, MMMM Do");
   delhiTimeElement.innerHTML = moment()
     .tz("Asia/Kolkata")
-    .format("h:m:s:SS [<small>]A[</small>]");
+    .format("h:mm:ss:SS [<small>]A[</small>]");
 
   //Shanghai, China
   let shanghaiDateElement = document.querySelector("#date-shanghai");
@@ -35,7 +35,25 @@ function updateDateTime() {
     .format("dddd, MMMM Do");
   shanghaiTimeElement.innerHTML = moment()
     .tz("Asia/Shanghai")
-    .format("h:m:s:SS [<small>]A[</small>]");
+    .format("h:mm:ss:SS [<small>]A[</small>]");
 }
 
 setInterval(updateDateTime, 100);
+
+function updateCity(event) {
+  let selectElement = document.querySelector("#choose-city");
+  let timeZone = event.target.value;
+  let city = selectElement.selectedOptions[0].label;
+  let displayElmement = document.querySelector("#display-city");
+  let date = moment().tz("${timeZone}").format("dddd, MMMM Do");
+  let time = moment().tz("${timeZone}").format("h:mm:ss [<small>]A[</small>]");
+  displayElmement.innerHTML = `<div class="city">
+          <div>
+            <h2>${city}</h2>
+            <div class="date">${date}</div>
+          </div>
+          <div class="time">${time}</div>
+        </div>`;
+}
+let selectElement = document.querySelector("#choose-city");
+selectElement.addEventListener("change", updateCity);
