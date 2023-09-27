@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Novia's World Clock</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -19,32 +22,32 @@
 
       <div class="city">
         <div>
-          <h2>Tokyo</h2>
-          <div class="date">September 21st, 2023</div>
+          <h2>Tokyo, Japan</h2>
+          <div class="date" id="date-tokyo"></div>
         </div>
-        <div class="time">10:34 <small>AM</small></div>
+        <div class="time" id="time-tokyo"></div>
       </div>
       <div class="city">
         <div>
-          <h2>New York</h2>
-          <div class="date">September 20th, 2023</div>
+          <h2>New York, USA</h2>
+          <div class="date" id="date-newyork"></div>
         </div>
-        <div class="time">9:36 <small>PM</small></div>
+        <div class="time" id="time-newyork"></div>
       </div>
 
       <div class="city">
         <div>
-          <h2>Tokyo</h2>
-          <div class="date">September 21st, 2023</div>
+          <h2>Delhi, India</h2>
+          <div class="date" id="date-delhi"></div>
         </div>
-        <div class="time">10:34 <small>AM</small></div>
+        <div class="time" id="time-delhi"></div>
       </div>
       <div class="city">
         <div>
-          <h2>New York</h2>
-          <div class="date">September 20th, 2023</div>
+          <h2>Shanghai, China</h2>
+          <div class="date" id="date-shanghai"></div>
         </div>
-        <div class="time">9:36 <small>PM</small></div>
+        <div class="time" id="time-shanghai"></div>
       </div>
     </div>
     <footer>
