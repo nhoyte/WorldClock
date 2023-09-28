@@ -22,6 +22,9 @@ select {
 footer {
   text-align: center;
 }
+a {
+  color: rgb(0 146 244);
+}
 div.container {
   padding: 10px;
   max-width: 500px;
@@ -30,6 +33,9 @@ div.container {
   border-radius: 7px;
   box-shadow: rgb(137 3 137 / 76%) 0px 3px 8px;
   background-color: #fdfaff;
+}
+div.backLink {
+  margin-top: 15px;
 }
 .city {
   padding: 30px 5px;
@@ -48,4 +54,7 @@ div.container {
   font-size: 15px;
   line-height: 36px;
   vertical-align: middle;
+}
+a:hover {
+  color: #ec00ec;
 }

@@ -61,5 +61,7 @@ function getSelectedCity(event) {
             <div class="date" id="date">${date}</div>
           </div>
           <div class="time" id="time">${time}</div>
-        </div>`;
+        </div>
+       <div class="backLink"><a href="/">Back to all cities</a></div>
+        `;
 }
